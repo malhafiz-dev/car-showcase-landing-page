@@ -1,0 +1,180 @@
+/* Global */
+section,
+header {
+  scroll-margin-top: 80px;
+}
+body {
+  padding-top: 56px;
+}
+/* Navbar */
+.navbar .nav-link {
+  position: relative;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #000;
+}
+.navbar .nav-link:hover::after {
+  width: 80%;
+}
+.navbar .nav-link.active {
+  color: #000;
+  font-weight: 600;
+}
+.navbar .nav-link.active::after {
+  width: 80%;
+}
+.background-header {
+  position: relative;
+  height: 95vh;
+  overflow: hidden;
+}
+.header-bg {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0;
+
+  transition: opacity 1.2s ease-in-out;
+}
+.header-bg.active {
+  opacity: 1;
+}
+/* overlay */
+.header-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.header-title {
+  color: aliceblue;
+}
+.header-description {
+  font-weight: bold;
+  color: #fff;
+}
+/* Button Style */
+.button-primer {
+  background-color: #919191;
+  border-color: #fff;
+  color: #fff;
+}
+.button-primer:hover {
+  background-color: #e1e3e1;
+  color: black;
+  font-weight: bold;
+  border-color: black;
+}
+.button-sekunder {
+  background-color: transparent;
+  border-color: #dbdbdb;
+  color: black;
+}
+.button-sekunder:hover {
+  background-color: #000;
+  border: white;
+  color: White;
+}
+/* Services */
+.service-style {
+  margin-top: 15px;
+  background-color: #fafbfc;
+}
+.button-service {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+}
+.button-service:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+/* Product */
+.product-image {
+  max-height: 400px;
+}
+.product-description {
+  min-height: 180px;
+}
+/* About */
+.cover {
+  background: no-repeat center/cover;
+}
+.about-title {
+  margin-top: 5rem;
+}
+.about-padding {
+  padding: 15px;
+}
+#about p {
+  text-align: justify;
+}
+.about-image-01 {
+  background-image: url("../img/about-us-01.jpg");
+}
+.about-image-02 {
+  background-image: url("../img/about-us-02.jpg");
+}
+.button-contact {
+  background-color: #25d366;
+  color: white;
+  border-color: grey;
+}
+.button-contact:hover {
+  background-color: #075e54;
+  color: white;
+  border-color: black;
+}
+/* Contact */
+#contact {
+  background-color: #fff;
+  padding: 25px;
+}
+/* Footer */
+footer div {
+  text-align: center;
+}
+footer a {
+  padding: 5px;
+}
+.footer-padding {
+  padding: 10px;
+}
+/* Membuat garis tengah pada setiap title section */
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+h2::before,
+h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: black;
+}

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Boostrap</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><img src="assets/img/logo.jpg" alt="logo" height="50px" width="auto"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarC"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#product" class="nav-link">Product</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="home" class="jumbotron jumbotron-fluid background-header">
+      <div class="header-bg header-bg-1"></div>
+      <div class="header-bg header-bg-2"></div>
+
+      <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center text-center header-content">
+        <h1 class="display-3 header-title">Cari Mobil Impianmu</h1>
+        <p class="lead header-description">Kami menyediakan banyak jenis mobil impian kamu!!</p>
+        <p><a href="#" class="btn button-primer btn-md" role="button">Cari sekarang!</a></p>
+      </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services" class="service-style container-fluid">
+      <div class="row text-center">
+        <div class="col-12 pb-4"><h2 class="display-5">Mengapa memilih menggunakan website ini?</h2></div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-car-side fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3">Premium Car Selection & Concierge</h3>
+          <p>
+            Bukan sekadar daftar stok, layanan ini membantu calon pembeli menemukan unit yang benar-benar sesuai dengan
+            preferensi, anggaran, dan gaya hidup mereka. Jika unit yang diinginkan tidak tersedia, tim akan
+            mencarikannya melalui jaringan mitra global.
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-clipboard-check fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3">Certified Technical Inspection</h3>
+          <p>
+            Setiap kendaraan sport yang kami tawarkan melewati proses pengecekan mendalam sebanyak 150+ titik (mulai
+            dari kesehatan mesin, sistem kelistrikan, hingga integritas sasis). Laporan hasil inspeksi transparan
+            disediakan untuk setiap pembeli.
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-hand-holding-dollar fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3">Exclusive Financing & Insurance</h3>
+          <p>
+            Kami bekerja sama dengan mitra keuangan dan asuransi terkemuka untuk menyediakan paket pembiayaan yang
+            fleksibel dan skema perlindungan asuransi khusus untuk mobil performa tinggi (supercar/sportscar).
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-headset fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3">VIP After-Sales & Maintenance Priority</h3>
+          <p>
+            Pemilik mobil sport mendapatkan akses prioritas ke jaringan bengkel spesialis resmi. Layanan ini mencakup
+            jadwal perawatan berkala yang diatur secara otomatis, layanan jemput-antar kendaraan, serta dukungan teknis
+            24/7.
+          </p>
+        </div>
+        <div class="col-12 pt-3 mb-5">
+          <a href="#" class="btn button-service btn-lg" target="_blank" role="button">Service Lainnya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section id="product" class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2 class="display-4 text-center mb-5">Produk Kami</h2>
+        </div>
+        <!-- Product 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="assets/img/produk-01.jpg"
+              alt="Product 1"
+              class="card-img-top product-image"
+            />
+            <div class="card-body product-description">
+              <h4 class="card-title">2026 Porsche 911 Turbo S</h4>
+              <p class="card-text">
+                Puncak performa ikonik dengan teknologi T-Hybrid terbaru. Menawarkan akselerasi eksplosif dan presisi
+                kendali tiada banding untuk pengalaman berkendara yang sesungguhnya.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail Product</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="assets/img/produk-02.jpg"
+              alt="Product 2"
+              class="card-img-top product-image"
+            />
+            <div class="card-body product-description">
+              <h4 class="card-title">2026 Mercedes-AMG SL</h4>
+              <p class="card-text">
+                Perpaduan sempurna antara kemewahan roadster klasik dan performa AMG yang tangguh. Dirancang dengan atap
+                soft-top elegan untuk kebebasan berkendara di setiap perjalanan.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail Product</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="assets/img/produk-03.jpg"
+              alt="Product 3"
+              class="card-img-top product-image"
+            />
+            <div class="card-body product-description">
+              <h4 class="card-title">2026 Lexus LC 500</h4>
+              <p class="card-text">
+                Mahakarya desain Grand Touring yang memukau. Ditenagai mesin V8 yang legendaris, memberikan harmoni
+                antara kenyamanan kabin premium dan gairah berkendara yang emosional.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn button-sekunder">Detail Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-light">
+      <div class="container-fluid">
+        <h2 class="display-4 text-center mb-5 about-title">Tentang Kami</h2>
+        <div class="row g-0">
+          <div class="col-12 col-md-6 order-1">
+            <div class="about-padding">
+              <h3 class="display-5 text-center mt-3 mb-3">Perjalanan Bisnis Kami</h3>
+              <p>
+                Berawal dari kecintaan terhadap dunia otomotif premium, kami hadir untuk menghadirkan pengalaman membeli
+                mobil sport yang aman, transparan, dan eksklusif. Selama bertahun-tahun, kami telah membantu ratusan
+                pelanggan menemukan kendaraan impian mereka, mulai dari Porsche, Ferrari, Lamborghini, hingga berbagai
+                merek performa tinggi lainnya. Dengan jaringan dealer dan mitra terpercaya, setiap kendaraan yang kami
+                tawarkan telah melalui proses inspeksi menyeluruh sehingga pelanggan dapat membeli dengan penuh
+                keyakinan. Komitmen kami bukan hanya menjual mobil, tetapi juga membangun hubungan jangka panjang dengan
+                setiap pelanggan.
+              </p>
+              <div class="col-12 pt-3 text-center">
+                <a href="#" class="btn button-service btn-lg">Pelajari Perjalanan Kami</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 order-2">
+            <div class="vh-100 cover about-image-01"></div>
+          </div>
+          <div class="col-12 col-md-6 order-4 order-md-3">
+            <div class="vh-100 cover about-image-02"></div>
+          </div>
+          <div class="col-12 col-md-6 order-3 order-md-4">
+            <div class="about-padding">
+              <h3 class="display-5 text-center mt-3 mb-3">Tim Profesional Kami</h3>
+              <p>
+                Tim kami terdiri dari konsultan otomotif, teknisi bersertifikat, dan spesialis kendaraan premium yang
+                memiliki pengalaman luas di industri mobil sport. Kami siap membantu mulai dari proses konsultasi,
+                pemilihan kendaraan, simulasi pembiayaan, hingga layanan purna jual. Dengan mengutamakan
+                profesionalisme, transparansi, dan pelayanan personal, kami memastikan setiap pelanggan mendapatkan
+                pengalaman pembelian yang nyaman serta solusi terbaik sesuai kebutuhan mereka.
+              </p>
+              <div class="col-12 pt-3 text-center">
+                <a href="#" class="btn button-service btn-lg">Lihat Tim Kami</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacts -->
+    <section id="contact" class="container-fluid text-center">
+      <h2 class="display-4 pb-4">Hubungi Kami Sekarang!</h2>
+      <p class="lead pb-3">Kirim pesan untuk bergabung bersama kami.</p>
+      <a href="#" class="btn button-contact btn-lg mb-4"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark">
+      <div class="col-lg-12 footer-padding">
+        <div>
+          <a href="#" class="text-light"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="text-light"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="text-light"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p class="text-center text-secondary">Copyright &copy Muhammad Al Hafiz 2026</p>
+      </div>
+    </footer>
+
+    <!-- bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/0835df0ce7.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
